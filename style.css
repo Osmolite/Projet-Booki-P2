@@ -1,0 +1,395 @@
+@font-face {
+    font-family: 'Raleway-Black';
+    src: url('fonts/Raleway-Black.ttf');
+}
+
+p {
+    font-family: 'Raleway-Black';
+    margin: 0;
+}
+
+a {
+    font-family: 'Raleway-Black';
+}
+
+body {
+    width: auto;
+}
+.sans-footer
+{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.menu-1 {
+    display: flex;
+    justify-content: space-between;
+}
+.sous-menu-1
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.Logo {
+    width: 95px;
+    height: 45px;
+}
+
+.Activités {
+    font-size: 15px;
+    padding-top: 18px;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+.Activités:hover {
+
+    border-top: 2px #0065FC solid;
+}
+
+.Hébergements {
+    font-size: 15px;
+    color: #0065FC;
+    padding-top: 15px;
+    border-top: 2px #0065FC solid;
+    margin-right: 30px;
+    text-decoration: none;
+}
+
+.P1-Menu2 {
+    font-size: 15px;
+}
+
+.P2-Menu2 {
+    font-size: 10px;
+}
+
+.menu-3 {
+    display: flex;
+    max-width: 450px;
+    margin-bottom: 20px;
+}
+
+.menu-3 input[type=submit] {
+    font-family: 'Raleway-Black';
+    background-color: #0065FC;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+    border: none;
+    padding: 0.5rem;
+    color: white;
+}
+
+.menu-3 input[type=text] {
+    border-left: none;
+    border-right: none;
+    border-top: 1px solid #F2F2F2;
+    border-bottom: 1px solid #F2F2F2;
+}
+
+.menu-3 input[type=text]:focus-visible {
+    outline: none;
+}
+
+.menu-3bis {
+    display: none;
+}
+
+.fa-solid.fa-location-dot {
+    background-color: #F2F2F2;
+    padding: 3px;
+    padding-top: 8px;
+    padding-left: 10px;
+    padding-right: 5px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.fa-solid.fa-circle-info {
+    padding-top: 8px;
+    padding-right: 5px;
+}
+
+.menu-4 {
+    display: flex;
+}
+
+.fa-solid.icone {
+    background-color: #DEEBFF;
+    color: #0065FC;
+}
+
+.filter{
+    display : flex;
+    margin-left: 20px;
+    padding-right: 10px;
+    border-radius: 30px;
+    border: 2px #F2F2F2 solid;
+}
+.icon {
+    display: flex;
+    background-color: #DEEBFF;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+}
+
+.filter > p {
+    padding: 10px;
+
+}
+
+.filter:hover {
+    background-color: #F2F2F2;
+}
+
+.menu-filtre {
+    margin-right: 20px;
+}
+
+.menu-5 {
+    display: flex;
+    font-size: 12px;
+}
+.fa-solid.fa-info
+{
+    padding-top: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
+    border-radius: 30px;
+    background-color: #DEEBFF;
+    color: #0065FC;
+}
+.section-1 {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.Hébergements-à-Marseille {
+    border-radius: 10px;
+    margin-right: 20px;
+    background-color: #F2F2F2;
+    
+}
+
+.titre-hebergement {
+    padding-left: 30px;
+    padding-top: 20px;
+}
+
+.Les-plus-populaires {
+    border-radius: 10px;
+    background-color: #F2F2F2;
+    
+
+}
+
+.hotel {
+    border-radius: 25px;
+    background-color: white;
+    margin: 20px;
+    padding: 5px;
+    width: calc(33% - 60px);
+}
+
+.hotel:active {
+    background-color: #0065FC;
+}
+
+.photo-hotel {
+    width: 100%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.photo-hotel-populaire {
+    width: 150px;
+    margin-right: 20px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+.fa-solid.fa-star.texte {
+    color: black;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+.texte-populaire-titre {
+    display: flex;
+    margin-left: 30px;
+    margin-top: 20px;
+
+}
+
+.nuit {
+    font-size: 12px;
+}
+
+.étoiles {
+    display: flex;
+}
+
+.Logo-étoile {
+    height: 15px;
+}
+
+.section-hotel {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hotel-populaire {
+    display: flex;
+    border-radius: 25px;
+    background-color: white;
+    margin: 20px;
+    padding: 5px;
+    width: 85%;
+}
+
+.hotel-populaire:active {
+    background-color: #0065FC;
+}
+
+.Photo-activité {
+    border-radius: 10px;
+    background-color: white;
+    max-width: 300px;
+    box-shadow: 6px 6px 6px #F2F2F2;
+    margin-top: 70px;
+}
+
+.container-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.test {
+    display: flex;
+    flex-direction: column;
+}
+
+.Photo-activité:active {
+    background-color: #0065FC;
+}
+
+.photo-activité-Marseille {
+    max-width: 300px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.texte-activité {
+    margin-left: 30px;
+}
+
+footer {
+    padding-left: 30px;
+    display: flex;
+    background-color: #F2F2F2;
+}
+
+.à-propos {
+    width: 33%;
+}
+
+.Nos-hébergements {
+    width: 33%;
+}
+
+.Assistance {
+    width: 33%;
+}
+
+.p-footer {
+    font-size: 12px;
+}
+
+.fa-solid.fa-star {
+    color: #0065FC;
+}
+
+.fa-solid.fa-star.etoile-vide {
+    color: #F2F2F2;
+}
+
+@media screen and (max-width: 800px) {
+    .menu-1 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .menu-3 {
+        display: none;
+    }
+
+    .menu-3bis {
+        display: flex;
+        max-width: 450px;
+    }
+    .hotel {
+        width: 80%;
+    }
+
+    .fa-solid.fa-magnifying-glass {
+        background-color: #0065FC;
+        color: white;
+        padding: 10px;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        height: 15px;
+    }
+    .menu-3bis input[type=submit] {
+        font-family: 'Raleway-Black';
+        background-color: #0065FC;
+        border-bottom-right-radius: 8px;
+        border-top-right-radius: 8px;
+        border: none;
+        padding: 0.5rem;
+        color: white;
+    }
+    
+    .menu-3bis input[type=text] {
+        border-left: none;
+        border-right: none;
+        border-top: 1px solid #F2F2F2;
+        border-bottom: 1px solid #F2F2F2;
+    }
+    
+    .menu-3bis input[type=text]:focus-visible {
+        outline: none;
+    }
+
+    .menu-4 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .section-1 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+    .section-hotel {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .Activités-à-Marseille {
+        display: flex;
+        flex-direction: column;
+        max-height: 1200px;
+    }
+
+    .photo-activité-Marseille {
+        width: 100%
+        
+    }
+    .sans-footer {
+        margin: none;
+    }
+}

@@ -42,6 +42,9 @@ body {
     margin-right: 20px;
     text-decoration: none;
 }
+.Activité {
+    text-decoration: none;
+}
 
 .Activités:hover {
 
@@ -56,7 +59,9 @@ body {
     margin-right: 30px;
     text-decoration: none;
 }
-
+.Hébergement {
+    text-decoration: none;
+}
 .P1-Menu2 {
     font-size: 15px;
 }
@@ -114,7 +119,9 @@ body {
 .menu-4 {
     display: flex;
 }
-
+.les-filtres {
+    display: flex;
+}
 .fa-solid.icone {
     background-color: #DEEBFF;
     color: #0065FC;
@@ -126,6 +133,7 @@ body {
     padding-right: 10px;
     border-radius: 30px;
     border: 2px #F2F2F2 solid;
+    height: 36px;
 }
 .icon {
     display: flex;
@@ -133,6 +141,9 @@ body {
     border-radius: 100%;
     width: 40px;
     height: 40px;
+    justify-content: center;
+    align-items: center;
+    margin: -2px;
 }
 
 .filter > p {
@@ -154,12 +165,16 @@ body {
 }
 .fa-solid.fa-info
 {
-    padding-top: 10px;
-    padding-right: 15px;
-    padding-left: 15px;
-    border-radius: 30px;
-    background-color: #DEEBFF;
+    display: flex;
+    background-color: white;
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: -2px;
     color: #0065FC;
+    border : 2px grey solid;
 }
 .section-1 {
     display: flex;
@@ -285,7 +300,9 @@ body {
 .texte-activité {
     margin-left: 30px;
 }
-
+.version-mobile {
+    display: none;
+}
 footer {
     padding-left: 30px;
     display: flex;
@@ -362,7 +379,9 @@ footer {
     .menu-3bis input[type=text]:focus-visible {
         outline: none;
     }
-
+    .menu-3bis {
+        margin-left: 50px;
+    }
     .menu-4 {
         display: flex;
         flex-wrap: wrap;
@@ -382,7 +401,6 @@ footer {
     .Activités-à-Marseille {
         display: flex;
         flex-direction: column;
-        max-height: 1200px;
     }
 
     .photo-activité-Marseille {
@@ -390,6 +408,81 @@ footer {
         
     }
     .sans-footer {
-        margin: none;
+        margin: 0;
+    }
+    .Activités {
+        font-size: 15px;
+        padding-top: 18px;
+        border-bottom: #F2F2F2 solid;
+        text-decoration: none;
+    }
+    
+    .Activités:hover {
+    
+        border-bottom: solid;
+        border-top: none;
+    }
+    
+    .Hébergements {
+        font-size: 15px;
+        color: #0065FC;
+        padding-top: 15px;
+        border-top: none;
+        border-bottom: solid;
+        text-decoration: none;
+        
+    }
+    .sous-menu-1
+    {
+        display: flex;
+        justify-content: space-between;
+    }
+    .logo-booki {
+        margin-left: calc(50% - 47px);
+    }
+    .P1-Menu2 {
+        margin-top: 15px;
+    }
+    .P2-Menu2 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .menu-4 {
+        display: flex;
+        flex-direction: column;
+    }
+    .les-filtres {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+    .p-footer {
+        margin: 10px;
+    }
+    .menu-5 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .version-mobile {
+        display: flex;
+        max-width: 300px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-radius: 10px;
+        background-color: white;
+        max-width: 300px;
+        box-shadow: 6px 6px 6px #F2F2F2;
+        margin-top: 70px;
+    }
+    .container-cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .no-version-mobile {
+        display: none;
     }
 }

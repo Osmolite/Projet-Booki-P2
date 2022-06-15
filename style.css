@@ -1,15 +1,11 @@
-@font-face {
-    font-family: 'Raleway-Black';
-    src: url('fonts/Raleway-Black.ttf');
-}
 
 p {
-    font-family: 'Raleway-Black';
+    font-family: 'Raleway', sans-serif;
     margin: 0;
 }
 
 a {
-    font-family: 'Raleway-Black';
+    font-family: 'Raleway', sans-serif;
 }
 
 body {
@@ -162,6 +158,8 @@ body {
 .menu-5 {
     display: flex;
     font-size: 12px;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 .fa-solid.fa-info
 {
@@ -280,6 +278,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-bottom: 30px;
 }
 
 .test {
@@ -300,7 +299,7 @@ body {
 .texte-activité {
     margin-left: 30px;
 }
-.version-mobile {
+.Photo-activité.version-mobile {
     display: none;
 }
 footer {
@@ -466,21 +465,8 @@ footer {
         margin-top: 10px;
         margin-bottom: 10px;
     }
-    .version-mobile {
+    .Photo-activité.version-mobile {
         display: flex;
-        max-width: 300px;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-        border-radius: 10px;
-        background-color: white;
-        max-width: 300px;
-        box-shadow: 6px 6px 6px #F2F2F2;
-        margin-top: 70px;
-    }
-    .container-cards {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
     }
     .no-version-mobile {
         display: none;

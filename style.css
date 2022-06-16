@@ -60,10 +60,13 @@ body {
 }
 .P1-Menu2 {
     font-size: 15px;
+    font-weight:700;
 }
 
 .P2-Menu2 {
-    font-size: 10px;
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 .menu-3 {
@@ -73,7 +76,8 @@ body {
 }
 
 .menu-3 input[type=submit] {
-    font-family: 'Raleway-Black';
+    font-family: 'Raleway', sans-serif;
+    font-weight:600;
     background-color: #0065FC;
     border-bottom-right-radius: 8px;
     border-top-right-radius: 8px;
@@ -114,6 +118,7 @@ body {
 
 .menu-4 {
     display: flex;
+    font-weight: 700;
 }
 .les-filtres {
     display: flex;
@@ -153,6 +158,7 @@ body {
 
 .menu-filtre {
     margin-right: 20px;
+    margin-top: 10px;
 }
 
 .menu-5 {
@@ -170,9 +176,12 @@ body {
     height: 20px;
     justify-content: center;
     align-items: center;
-    margin: -2px;
     color: #0065FC;
-    border : 2px grey solid;
+    border : 2px rgb(221, 221, 221) solid;
+    margin-right: 10px;
+}
+.menu-5 > p {
+    margin-top: 6px;
 }
 .section-1 {
     display: flex;
@@ -180,6 +189,7 @@ body {
 }
 
 .Hébergements-à-Marseille {
+    width: 70%;
     border-radius: 10px;
     margin-right: 20px;
     background-color: #F2F2F2;
@@ -189,8 +199,19 @@ body {
 .titre-hebergement {
     padding-left: 30px;
     padding-top: 20px;
+    font-weight: 700;
 }
-
+.titre-populaire {
+    padding-left: 30px;
+    font-weight: 700;
+}
+.titre-hotel
+{
+    font-weight: 600;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
 .Les-plus-populaires {
     border-radius: 10px;
     background-color: #F2F2F2;
@@ -226,7 +247,6 @@ body {
 .fa-solid.fa-star.texte {
     color: black;
     margin-left: 100px;
-    margin-top: 20px;
 }
 
 .texte-populaire-titre {
@@ -238,10 +258,17 @@ body {
 
 .nuit {
     font-size: 12px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
 }
 
 .étoiles {
     display: flex;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .Logo-étoile {
@@ -267,20 +294,24 @@ body {
 }
 
 .Photo-activité {
-    border-radius: 10px;
+    border-radius: 20px;
     background-color: white;
     max-width: 300px;
     box-shadow: 6px 6px 6px #F2F2F2;
-    margin-top: 70px;
+    margin : 10px;
+    padding-bottom: 15px;
 }
 
 .container-cards {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 30px;
 }
-
+.titre-activité {
+    font-size: 15px;
+    padding: 10px;
+    font-weight: 600;
+}
 .test {
     display: flex;
     flex-direction: column;
@@ -292,12 +323,14 @@ body {
 
 .photo-activité-Marseille {
     max-width: 300px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
 .texte-activité {
     margin-left: 30px;
+    margin-top: 30px;
+    font-weight: 700;
 }
 .Photo-activité.version-mobile {
     display: none;
@@ -307,29 +340,46 @@ footer {
     display: flex;
     background-color: #F2F2F2;
 }
-
+.titre-footer {
+    font-weight: 600;
+    padding-top: 30px;
+    padding-bottom: 5px;
+}
+.p-footer {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-decoration: none;
+    font-size: 12px;
+    color: black;
+}
 .à-propos {
+    display: flex;
+    flex-direction: column;
     width: 33%;
 }
 
 .Nos-hébergements {
+    display: flex;
+    flex-direction: column;
     width: 33%;
 }
 
 .Assistance {
+    display: flex;
+    flex-direction: column;
     width: 33%;
-}
-
-.p-footer {
-    font-size: 12px;
 }
 
 .fa-solid.fa-star {
     color: #0065FC;
+    font-size: 12px;
 }
 
 .fa-solid.fa-star.etoile-vide {
     color: #F2F2F2;
+}
+.afficher {
+    display: none;
 }
 
 @media screen and (max-width: 800px) {
@@ -337,7 +387,17 @@ footer {
         display: flex;
         flex-wrap: wrap;
     }
-
+    .P1-Menu2 {
+        font-size: 25px;
+        font-weight:700;
+        margin-top: 15px;
+    }
+    
+    .P2-Menu2 {
+        font-size: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
     .menu-3 {
         display: none;
     }
@@ -421,7 +481,11 @@ footer {
         border-bottom: solid;
         border-top: none;
     }
-    
+    .Hébergements-à-Marseille {
+        background-color: white;
+        width: 100%;
+        margin-left: 10px;
+    }
     .Hébergements {
         font-size: 15px;
         color: #0065FC;
@@ -431,6 +495,14 @@ footer {
         text-decoration: none;
         
     }
+    .titre-hebergement {
+        font-size: 22px;
+        font-weight: 900;
+    }
+    .titre-populaire {
+        font-size: 22px;
+        font-weight: 900;
+    }
     .sous-menu-1
     {
         display: flex;
@@ -438,13 +510,6 @@ footer {
     }
     .logo-booki {
         margin-left: calc(50% - 47px);
-    }
-    .P1-Menu2 {
-        margin-top: 15px;
-    }
-    .P2-Menu2 {
-        margin-top: 10px;
-        margin-bottom: 10px;
     }
     .menu-4 {
         display: flex;
@@ -465,10 +530,54 @@ footer {
         margin-top: 10px;
         margin-bottom: 10px;
     }
-    .Photo-activité.version-mobile {
-        display: flex;
-    }
     .no-version-mobile {
         display: none;
     }
-}
+    .Photo-activité.version-mobile {
+        display: flex;
+        flex-direction: column;
+    }
+    .container-cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .fa-solid.fa-star.texte {
+    font-size: 20px;
+    margin-left: 50px;
+    }
+    .afficher {
+        display: block;
+        font-weight: 600;
+        padding-left: 35px;
+    }
+    .texte-activité {
+        margin-left: 10px;
+        font-size: 22px;
+    }
+    .à-propos {
+        width: 100%;
+    }
+    
+    .Nos-hébergements {
+        width: 100%;
+    }
+    
+    .Assistance {
+        width: 100%;
+    }
+    .titre-footer {
+        font-size: 22px;
+        font-weight: 600;
+        padding-top: 30px;
+        padding-bottom: 5px;
+    }
+    .p-footer {
+        font-size: 18px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .Les-plus-populaires {
+        width: 100%;
+    }
+    }

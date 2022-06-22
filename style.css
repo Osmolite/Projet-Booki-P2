@@ -16,8 +16,8 @@ body {
 {
     margin-left: 50px;
     margin-right: 50px;
+    max-width: 1500px;
 }
-
 .menu-1 {
     display: flex;
     justify-content: space-between;
@@ -308,9 +308,6 @@ body {
     justify-content: space-between;
     margin-bottom: 30px;
 }
-.conteneur-activité {
-    width: 1400px;
-}
 .titre-activité {
     font-size: 15px;
     padding: 10px;
@@ -326,7 +323,7 @@ body {
 }
 
 .photo-activité-Marseille {
-    max-width: 300px;
+    max-width: 100%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
@@ -342,7 +339,12 @@ body {
 footer {
     padding-left: 70px;
     display: flex;
+    flex-direction: row;
     background-color: #F2F2F2;
+}
+.taille-footer {
+    display: flex;
+    max-width: 1500px;
 }
 .titre-footer {
     font-weight: 600;
@@ -358,13 +360,13 @@ footer {
 }
 .à-propos {
     display: flex;
-    flex-direction: column;
+    flex-direction: column;  
     width: 33%;
 }
 
 .Nos-hébergements {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
     width: 33%;
 }
 

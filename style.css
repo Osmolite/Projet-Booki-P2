@@ -338,13 +338,16 @@ body {
 }
 footer {
     padding-left: 70px;
-    display: flex;
-    flex-direction: row;
+    /* Plus besoin puisque footer ne contient qu'un enfant. On le laisse donc de type display: block */
+    /*display: flex;
+    flex-direction: row;*/
     background-color: #F2F2F2;
 }
 .taille-footer {
     display: flex;
     max-width: 1500px;
+    /* On ajoute un padding-bottom pour que le texte ne soit pas collé en bas de la page. */
+    padding-bottom: 1.5rem ;
 }
 .titre-footer {
     font-weight: 600;
@@ -360,20 +363,23 @@ footer {
 }
 .à-propos {
     display: flex;
-    flex-direction: column;  
-    width: 33%;
+    flex-direction: column;
+    /* On remplace le width: 33% par un flex: 1, comme c'est le CSS qui s'occupe de gérer la taille des élements */
+    flex: 1;
 }
 
 .Nos-hébergements {
     display: flex;
-    flex-direction: column; 
-    width: 33%;
+    flex-direction: column;
+    /* On remplace le width: 33% par un flex: 1, comme c'est le CSS qui s'occupe de gérer la taille des élements */
+    flex: 1;
 }
 
 .Assistance {
     display: flex;
     flex-direction: column;
-    width: 33%;
+    /* On remplace le width: 33% par un flex: 1, comme c'est le CSS qui s'occupe de gérer la taille des élements */
+    flex: 1;
 }
 
 .fa-solid.fa-star {

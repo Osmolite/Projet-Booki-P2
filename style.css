@@ -338,13 +338,12 @@ body {
 }
 footer {
     padding-left: 70px;
-    display: flex;
-    flex-direction: row;
     background-color: #F2F2F2;
 }
 .taille-footer {
     display: flex;
     max-width: 1500px;
+    padding-bottom: 1.5rem;
 }
 .titre-footer {
     font-weight: 600;
@@ -361,19 +360,19 @@ footer {
 .à-propos {
     display: flex;
     flex-direction: column;  
-    width: 33%;
+    flex: 1;
 }
 
 .Nos-hébergements {
     display: flex;
     flex-direction: column; 
-    width: 33%;
+    flex: 1;
 }
 
 .Assistance {
     display: flex;
     flex-direction: column;
-    width: 33%;
+    flex: 1;
 }
 
 .fa-solid.fa-star {
@@ -529,7 +528,7 @@ footer {
         display: flex;
         flex-wrap: wrap;
     }
-    footer {
+    .taille-footer {
         display: flex;
         flex-direction: column;
     }

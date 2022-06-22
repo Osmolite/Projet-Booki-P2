@@ -336,6 +336,9 @@ body {
 .Photo-activité.version-mobile {
     display: none;
 }
+.Photo-activité.version-tablette {
+    display: none;
+}
 footer {
     padding-left: 70px;
     background-color: #F2F2F2;
@@ -386,8 +389,223 @@ footer {
 .afficher {
     display: none;
 }
+@media screen and (max-width: 992px) {
+    .menu-1 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .P1-Menu2 {
+        font-size: 25px;
+        font-weight:700;
+        margin-top: 15px;
+    }
+    
+    .P2-Menu2 {
+        font-size: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .menu-3 {
+        display: none;
+    }
 
-@media screen and (max-width: 800px) {
+    .menu-3bis {
+        display: flex;
+        max-width: 450px;
+    }
+    .hotel {
+        width: 80%;
+    }
+
+    .fa-solid.fa-magnifying-glass {
+        background-color: #0065FC;
+        color: white;
+        padding: 10px;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        height: 15px;
+    }
+    .menu-3bis input[type=submit] {
+        font-family: 'Raleway-Black';
+        background-color: #0065FC;
+        border-bottom-right-radius: 8px;
+        border-top-right-radius: 8px;
+        border: none;
+        padding: 0.5rem;
+        color: white;
+    }
+    
+    .menu-3bis input[type=text] {
+        border-left: none;
+        border-right: none;
+        border-top: 1px solid #F2F2F2;
+        border-bottom: 1px solid #F2F2F2;
+    }
+    
+    .menu-3bis input[type=text]:focus-visible {
+        outline: none;
+    }
+    .menu-3bis {
+        margin-left: 50px;
+    }
+    .menu-4 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .section-1 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+    .section-hotel {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .Activités-à-Marseille {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .photo-activité-Marseille {
+        width: 100%
+        
+    }
+    .sans-footer {
+        margin: 0;
+    }
+    .Activités {
+        font-size: 15px;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 18px;
+        border-bottom: #F2F2F2 solid;
+        text-decoration: none;
+    }
+    
+    .Activités:hover {
+    
+        border-bottom: solid;
+        border-top: none;
+    }
+    .Hébergements-à-Marseille {
+        background-color: white;
+        width: 100%;
+        margin-left: 10px;
+    }
+    .Hébergements {
+        padding-left: 40px;
+        padding-right: 40px;
+        font-size: 15px;
+        color: #0065FC;
+        padding-top: 15px;
+        border-top: none;
+        border-bottom: solid;
+        text-decoration: none;
+        
+    }
+    .titre-hebergement {
+        font-size: 22px;
+        font-weight: 900;
+    }
+    .titre-populaire {
+        font-size: 22px;
+        font-weight: 900;
+    }
+    .sous-menu-1
+    {
+        display: flex;
+        justify-content: space-between;
+    }
+    .logo-booki {
+        margin-left: calc(50% - 47px);
+    }
+    .menu-4 {
+        display: flex;
+        flex-direction: column;
+    }
+    .les-filtres {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .taille-footer {
+        display: flex;
+        flex-direction: column;
+    }
+    .p-footer {
+        margin: 10px;
+    }
+    .menu-5 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .no-version-mobile {
+        display: none;
+    }
+    .version-mobile {
+        display: none;
+    }
+    .Photo-activité.version-tablette {
+        display: flex;
+        flex-direction: column;
+    }
+    .container-cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .fa-solid.fa-star.texte {
+    font-size: 20px;
+    margin-left: 50px;
+    }
+    .afficher {
+        display: block;
+        font-weight: 600;
+        padding-left: 90px;
+    }
+    .texte-activité {
+        margin-left: 50px;
+        font-size: 22px;
+    }
+    .à-propos {
+        width: 100%;
+    }
+    
+    .Nos-hébergements {
+        width: 100%;
+    }
+    
+    .Assistance {
+        width: 100%;
+    }
+    .titre-footer {
+        font-size: 22px;
+        font-weight: 600;
+        padding-top: 30px;
+        padding-bottom: 5px;
+    }
+    .p-footer {
+        font-size: 18px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .Les-plus-populaires {
+        width: 100%;
+    }
+    .Photo-activité {
+        max-width: 500px;
+    }
+    .menu-filtre {
+        margin-right: 20px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
     .menu-1 {
         display: flex;
         flex-wrap: wrap;
@@ -546,6 +764,9 @@ footer {
         display: flex;
         flex-direction: column;
     }
+    .Photo-activité {
+        max-width: 300px;
+    }
     .container-cards {
         display: flex;
         flex-direction: column;
@@ -588,5 +809,8 @@ footer {
     }
     .Les-plus-populaires {
         width: 100%;
+    }
+    .Photo-activité.version-tablette {
+        display: none;
     }
     }

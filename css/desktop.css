@@ -26,6 +26,7 @@ a {
 body {
     width: auto;
     margin: 0;
+    overflow-x:hidden;
 }
 
 .sans-footer {
